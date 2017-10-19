@@ -1,0 +1,49 @@
+//
+//  Common.pch
+//  SuperPuzzle
+//
+//  Created by zuokai on 2017/8/7.
+//  Copyright © 2017年 zuokai. All rights reserved.
+//
+//#import "UIColor+HexOne.h"
+#import "UIView+AJZJFrame.h"
+#import "UIImage+Image_MEXJ.h"
+#import "DefineDebug.h"
+#import "UIBarButtonItem+Item.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#define ERROR(error)  [[NSError alloc] initWithDomain:error.userInfo[@"NSLocalizedDescription"] code:(NSInteger)error.userInfo[@"_kCFStreamErrorCodeKey"] userInfo:error.userInfo]
+#define WINDOW [[[UIApplication sharedApplication] delegate] window]
+
+#define STORYBOARD(p) [UIStoryboard storyboardWithName:p bundle:[NSBundle mainBundle]]
+#define STORYBOARDVC(STORY,VC) [STORYBOARD(STORY) instantiateViewControllerWithIdentifier:VC]
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+// Puzzle
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+//#import "UIColor+Help.h"
+#import "LoadingViewManager.h"
+
+#define isIOS7                  ([[[UIDevice currentDevice]systemVersion]floatValue]>=7)
+#define IOS7 [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
+#define iOS7AddStatusHeight     (IOS7?20:0)
+
+#define D_LocalizedCardString(s) [[NSBundle mainBundle] localizedStringForKey:s value:nil table:@"CardToolLanguage"]
+
+#define D_Main_Appdelegate (AppDelegate *)[UIApplication sharedApplication].delegate
+
+#endif
+
+
+
+

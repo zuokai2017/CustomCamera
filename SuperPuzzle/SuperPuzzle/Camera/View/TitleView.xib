@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TitleView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-aY-mrF">
+                    <rect key="frame" x="20" y="4.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="0Pz-lQ-kcN"/>
+                        <constraint firstAttribute="height" constant="35" id="oOT-rt-BSU"/>
+                    </constraints>
+                    <state key="normal" image="nav_btn_black"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="3L7-QD-0jB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kka-Us-HwJ">
+                    <rect key="frame" x="115" y="11" width="15" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="8h1-1m-Io2"/>
+                        <constraint firstAttribute="height" constant="22" id="vnz-Eu-qSF"/>
+                    </constraints>
+                    <state key="normal" image="闪光灯"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Ro-9O-aMj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-TM-HUB">
+                    <rect key="frame" x="204" y="11" width="19" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="UGn-ir-BJH"/>
+                        <constraint firstAttribute="height" constant="22" id="jfL-kB-Tbe"/>
+                    </constraints>
+                    <state key="normal" image="定时"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="oQC-gS-a12"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-5L-RTO">
+                    <rect key="frame" x="303" y="11" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="E9C-Nl-vZu"/>
+                        <constraint firstAttribute="width" constant="22" id="y5S-ds-IiC"/>
+                    </constraints>
+                    <state key="normal" title="切换" image="切换"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bIr-oi-kFj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kka-Us-HwJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lj5-y3-l1Q"/>
+                <constraint firstAttribute="trailing" secondItem="gWF-5L-RTO" secondAttribute="trailing" constant="50" id="NHe-Du-wFG"/>
+                <constraint firstItem="gvP-aY-mrF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RP6-XP-ElQ"/>
+                <constraint firstItem="Kka-Us-HwJ" firstAttribute="leading" secondItem="gvP-aY-mrF" secondAttribute="trailing" constant="60" id="a2H-kR-M3t"/>
+                <constraint firstItem="OfL-TM-HUB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dfx-eh-N3e"/>
+                <constraint firstItem="gWF-5L-RTO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fYU-PT-DIr"/>
+                <constraint firstItem="gWF-5L-RTO" firstAttribute="leading" secondItem="OfL-TM-HUB" secondAttribute="trailing" constant="80" id="kOq-bT-7BJ"/>
+                <constraint firstItem="gvP-aY-mrF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="oG5-y5-FrZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="flashBtn" destination="Kka-Us-HwJ" id="wbA-hI-6Px"/>
+                <outlet property="timerBtn" destination="OfL-TM-HUB" id="LDA-pe-t4r"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="-1016"/>
+        </view>
+        <view contentMode="scaleToFill" id="Sfr-5f-zCm" customClass="TitleView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-43-cc3">
+                    <rect key="frame" x="60" y="11" width="15" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="nch-63-sFg"/>
+                        <constraint firstAttribute="height" constant="22" id="si3-mk-2SJ"/>
+                    </constraints>
+                    <state key="normal" title="自动模式" image="闪光灯"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="Sfr-5f-zCm" eventType="touchUpInside" id="mdg-Yu-p5V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozg-Os-HgR">
+                    <rect key="frame" x="125" y="11" width="13" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="3T7-T7-ort"/>
+                        <constraint firstAttribute="width" constant="13" id="OCr-BY-SM1"/>
+                    </constraints>
+                    <state key="normal" title="闪光灯打开" image="闪光灯_打开"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="Sfr-5f-zCm" eventType="touchUpInside" id="RbO-id-hmZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-RG-A7V">
+                    <rect key="frame" x="190" y="11" width="13" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="4fQ-yZ-9Wk"/>
+                        <constraint firstAttribute="width" constant="13" id="lvi-Rh-awq"/>
+                    </constraints>
+                    <state key="normal" title="闪光灯关闭" image="闪光灯_关闭"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="Sfr-5f-zCm" eventType="touchUpInside" id="FmU-Ri-vAa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sGv-43-cc3" firstAttribute="leading" secondItem="Sfr-5f-zCm" secondAttribute="leading" constant="60" id="8Oo-18-gQh"/>
+                <constraint firstItem="Ozg-Os-HgR" firstAttribute="centerY" secondItem="Sfr-5f-zCm" secondAttribute="centerY" id="9k3-kk-FvD"/>
+                <constraint firstItem="sGv-43-cc3" firstAttribute="centerY" secondItem="Sfr-5f-zCm" secondAttribute="centerY" id="Nql-1h-Sbo"/>
+                <constraint firstItem="1Er-RG-A7V" firstAttribute="leading" secondItem="Ozg-Os-HgR" secondAttribute="trailing" constant="52" id="Pa5-O9-x33"/>
+                <constraint firstItem="1Er-RG-A7V" firstAttribute="centerY" secondItem="Sfr-5f-zCm" secondAttribute="centerY" id="hr8-7D-bno"/>
+                <constraint firstItem="Ozg-Os-HgR" firstAttribute="leading" secondItem="sGv-43-cc3" secondAttribute="trailing" constant="50" id="vda-F3-zFx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57" y="-624"/>
+        </view>
+        <view contentMode="scaleToFill" id="mN7-5Z-nVi" customClass="TitleView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVr-OF-alF">
+                    <rect key="frame" x="50" y="11" width="19" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="bxn-qQ-DaJ"/>
+                        <constraint firstAttribute="height" constant="22" id="ssv-FF-0KS"/>
+                    </constraints>
+                    <state key="normal" image="定时"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="mN7-5Z-nVi" eventType="touchUpInside" id="SPM-ay-qfw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-ky-sOz">
+                    <rect key="frame" x="124" y="10.5" width="19" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="EoC-aV-GwV"/>
+                        <constraint firstAttribute="height" constant="23" id="aHM-Xd-rUE"/>
+                    </constraints>
+                    <state key="normal" image="定时_3秒"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="mN7-5Z-nVi" eventType="touchUpInside" id="pLW-2o-KPP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-uO-Hmc">
+                    <rect key="frame" x="198" y="11" width="19" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="MbC-GV-rrH"/>
+                        <constraint firstAttribute="width" constant="19" id="hMi-vQ-Ud7"/>
+                    </constraints>
+                    <state key="normal" image="定时_6秒"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="mN7-5Z-nVi" eventType="touchUpInside" id="61X-OU-T5x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVm-YD-M8m">
+                    <rect key="frame" x="276" y="10.5" width="19" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="ACq-E3-6a9"/>
+                        <constraint firstAttribute="width" constant="19" id="TKC-5u-m0Y"/>
+                    </constraints>
+                    <state key="normal" image="定时_9秒"/>
+                    <connections>
+                        <action selector="BtnClicked:" destination="mN7-5Z-nVi" eventType="touchUpInside" id="nOe-w9-g3T"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SwS-ky-sOz" firstAttribute="leading" secondItem="QVr-OF-alF" secondAttribute="trailing" constant="55" id="6ma-qp-Xjc"/>
+                <constraint firstItem="QVr-OF-alF" firstAttribute="leading" secondItem="mN7-5Z-nVi" secondAttribute="leading" constant="50" id="D6z-Lk-rkq"/>
+                <constraint firstAttribute="trailing" secondItem="vVm-YD-M8m" secondAttribute="trailing" constant="80" id="Fsq-ND-CXR"/>
+                <constraint firstItem="Caw-uO-Hmc" firstAttribute="centerY" secondItem="mN7-5Z-nVi" secondAttribute="centerY" id="HWk-2D-4RY"/>
+                <constraint firstItem="Caw-uO-Hmc" firstAttribute="leading" secondItem="SwS-ky-sOz" secondAttribute="trailing" constant="55" id="NeF-Xc-KaL"/>
+                <constraint firstItem="QVr-OF-alF" firstAttribute="centerY" secondItem="mN7-5Z-nVi" secondAttribute="centerY" id="TuA-r5-7Tg"/>
+                <constraint firstItem="SwS-ky-sOz" firstAttribute="centerY" secondItem="mN7-5Z-nVi" secondAttribute="centerY" id="Ybf-uj-JzT"/>
+                <constraint firstItem="vVm-YD-M8m" firstAttribute="centerY" secondItem="mN7-5Z-nVi" secondAttribute="centerY" id="kQ8-YH-fM4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57" y="-523"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_btn_black" width="7" height="11"/>
+        <image name="切换" width="44" height="44"/>
+        <image name="定时" width="38" height="44"/>
+        <image name="定时_3秒" width="38" height="44"/>
+        <image name="定时_6秒" width="38" height="45"/>
+        <image name="定时_9秒" width="38" height="45"/>
+        <image name="闪光灯" width="30" height="44"/>
+        <image name="闪光灯_关闭" width="29" height="44"/>
+        <image name="闪光灯_打开" width="26" height="44"/>
+    </resources>
+</document>

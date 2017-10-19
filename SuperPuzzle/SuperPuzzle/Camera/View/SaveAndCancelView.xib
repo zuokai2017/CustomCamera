@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SaveAndCancelView" id="iN0-l3-epB" customClass="SaveAndCancelView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmX-pU-3FR">
+                    <rect key="frame" x="265" y="473" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Ep0-yF-yeW"/>
+                        <constraint firstAttribute="width" constant="70" id="IZF-87-Ham"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="sure"/>
+                    <connections>
+                        <action selector="btnClicke:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cce-Sw-MmP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr8-rl-TvC">
+                    <rect key="frame" x="40" y="473" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="byo-YX-zDY"/>
+                        <constraint firstAttribute="height" constant="70" id="y9L-od-PxR"/>
+                    </constraints>
+                    <state key="normal" image="cancel"/>
+                    <connections>
+                        <action selector="btnClicke:" destination="iN0-l3-epB" eventType="touchUpInside" id="5vR-yi-1rF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zr8-rl-TvC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="50m-0N-mFB"/>
+                <constraint firstAttribute="trailing" secondItem="fmX-pU-3FR" secondAttribute="trailing" constant="40" id="KaH-Aw-abe"/>
+                <constraint firstAttribute="bottom" secondItem="zr8-rl-TvC" secondAttribute="bottom" constant="124" id="MBL-AR-b8W"/>
+                <constraint firstAttribute="bottom" secondItem="fmX-pU-3FR" secondAttribute="bottom" constant="124" id="z5M-qq-yyR"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="90" height="89"/>
+        <image name="sure" width="80" height="80"/>
+    </resources>
+</document>
